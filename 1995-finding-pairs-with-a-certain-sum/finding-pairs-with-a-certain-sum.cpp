@@ -3,8 +3,8 @@ public:
     vector<int> n1,n2;
     unordered_map<int,int> s2;
    FindSumPairs(vector<int>& nums1, vector<int>& nums2) {
-    n1 = nums1;
-    n2 = nums2;
+    n1=nums1;
+    n2=nums2;
     for (auto& it : n2) s2[it]++;  
 }
     
@@ -20,7 +20,7 @@ public:
         cnt += s2[tot - it];  
     }
 
-    
+
     return cnt;
 }
 };
