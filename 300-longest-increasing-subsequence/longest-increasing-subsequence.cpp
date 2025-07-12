@@ -1,10 +1,6 @@
-//speed up i/o operations
+// to speed up i/o operations
 const auto _ = std::cin.tie(nullptr)->sync_with_stdio(false);
 #define LC_HACK
-
-//This block writes "0" to a file named "display_runtime.txt" at program exit
-//It's a LeetCode trick sometimes used to tweak runtime display
-
 const auto __ = []() {
     struct ___ {
         static void _() { std::ofstream("display_runtime.txt") << 0 << '\n'; }
