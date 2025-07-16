@@ -16,9 +16,12 @@ public:
                     isPrime[j] = false;
                 }
             }
+
+
+            
         }
 
-        int count = 0;
+        int count=0;
 
         // Case 1: p^8
         for (int p : primes) {
@@ -26,6 +29,9 @@ public:
             for (int i = 0; i < 8; ++i) val *= p;
             if (val <= n) count++;
             else break;
+
+
+            
         }
 
         // Case 2: p1^2 * p2^2
