@@ -25,6 +25,8 @@ public:
         if(root->left == NULL && root->right == NULL){
             ans = min(ans,dep);
             return;
+
+
         }
 
         solve(root->left,ans,dep+1);
@@ -34,9 +36,9 @@ public:
 
    
     int minDepth(TreeNode* root) {
-        if(root == NULL) return 0;
-        int ans = INT_MAX;
-        solve(root, ans,0);
+        if(root==NULL)return 0;
+        int ans=INT_MAX;
+        solve(root,ans,0);
         return ans + 1;
     }
 };
