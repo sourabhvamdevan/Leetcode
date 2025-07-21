@@ -43,4 +43,4 @@ public:
     }
 };
 
-auto init=atexit([](){ofstream("document_runtime.txt")<<0;});
+
