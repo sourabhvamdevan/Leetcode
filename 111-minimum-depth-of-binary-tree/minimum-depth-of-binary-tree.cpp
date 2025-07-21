@@ -13,6 +13,9 @@
 
 class Solution {
 public:
+
+
+
      void solve(TreeNode* root, int &ans, int dep){
         if(root == NULL){
             return;
