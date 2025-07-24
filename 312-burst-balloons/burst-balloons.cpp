@@ -1,9 +1,13 @@
 class Solution {
+    private:
+    #define pb push_back
+    #define vi vector<int>
+
 public:
     int maxCoins(vector<int>& nums) {
-        nums.push_back(1);
+        nums.pb(1);
         nums.insert(nums.begin(),1);
-        vector<vector<int>>dp(nums.size(),vector<int>(nums.size()));
+        vector<vector<int>>dp(nums.size(),vi(nums.size()));
         for(int i=nums.size()-2;i>=1;i--){
             for(int j=i;j<nums.size()-1;j++){
                 int ans=INT_MIN;
