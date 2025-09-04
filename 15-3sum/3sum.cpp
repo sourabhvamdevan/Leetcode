@@ -1,12 +1,13 @@
 #include <vector>
 #include <algorithm>
+#define vvi vector<vector<int>> 
 using namespace std;
 
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
         sort(nums.begin(), nums.end());
-        vector<vector<int>> res;
+        vvi res;
 
         for (int i = 0; i < nums.size() - 2; i++) {
             if (i > 0 && nums[i] == nums[i - 1]) continue;
