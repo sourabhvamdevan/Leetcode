@@ -2,31 +2,41 @@ class Solution {
   public:
     int maxOnes(vector<int>& arr, int k) {
         // code here
-        int l=0,r=0;
-        int maxLen=0;
-        int zeroCnt=0;
-        while(r<arr.size()){
-            if(arr[r]==0){
-                zeroCnt++;
+          int res = 0;
+
+   
+    int start = 0, end = 0; 
+    
+   
+    int cnt = 0;
+    
+    while (end < arr.size())
+    {
+        if(arr[end] == 0)
+            cnt++;
+        
+        
+        while (cnt > k)
+        {
+            if(arr[start] == 0)
+                cnt--;
                 
-                
-            }
-            
-            while(zeroCnt>k){
-                if(arr[l]==0){
-                    zeroCnt--;
-                    
-                }
-                
-                l++;
-                
-            }
-            
-            maxLen=max(maxLen,r-l+1);
-            r++;
-            
+            start++;
         }
         
-        return maxLen;
+        
+        
+        res=max(res, (end-start+1));
+        
+        
+        
+        end++; 
+    }
+    
+    
+    
+    return res; 
+        
+        
     }
 };
