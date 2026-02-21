@@ -1,24 +1,34 @@
 class Solution {
-public:
+  public:
     int hIndex(vector<int>& citations) {
-        int n = citations.size();
-        vector<int> buckets(n + 1, 0);
+        // code here
+        
+            int n = citations.size();
+    vector<int> freq(n + 1);
 
-        for (int c : citations) {
-            if (c >= n)
-                buckets[n]++;
-            else
-                buckets[c]++;
-        }
+   
+    for (int i = 0; i < n; i++)
+    {
+        if (citations[i] >= n)
+            freq[n] += 1;
+        else
+            freq[citations[i]] += 1;
+    }
 
-        int cumulative = 0;
-        for (int i = n; i >= 0; --i) {
-            cumulative += buckets[i];
-            if (cumulative >= i)
-                return i;
-        }
+    int idx = n;
+    
+
+    int s = freq[n]; 
+    while (s < idx) {
+        idx--;
+        s += freq[idx];
+    }
+  
+   
+    return idx;
         
         
-        return 0;
+        
+        
     }
 };
