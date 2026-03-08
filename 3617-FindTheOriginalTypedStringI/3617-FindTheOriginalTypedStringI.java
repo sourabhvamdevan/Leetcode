@@ -1,0 +1,24 @@
+// Last updated: 08/03/2026, 13:23:44
+class Solution {
+    public int possibleStringCount(String word) {
+        int ans=0;
+        char prevChar=word.charAt(0);
+        for(int i=1;i<word.length(); i++){
+            char c=word.charAt(i);
+            if(c==prevChar){
+
+                ans++;
+
+
+            } else {
+                prevChar=c;
+
+            }
+        }
+
+
+         return ans+1;
+
+      
+    }
+}
