@@ -1,0 +1,11 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/distinct-occurrences/1?page=4&category=Dynamic%20Programming&sortBy=submissions">Distinct occurrences</a></h2><h3>Difficulty Level : Difficulty: Hard</h3><hr><div class="problems_problem_content__Xm_eO" style="--text-color: var(--problem-text-color);"><p><span style="font-size: 14pt;">You are given two strings <strong><code>txt</code></strong> and <strong><code>pat</code></strong>, find the count of <strong>distinct </strong>occurrences of <strong><code>pat</code></strong> as a subsequence in <strong><code>txt</code></strong>.</span></p>
+<p><span style="font-size: 14pt;"><strong>Note:</strong> It is guaranteed that the ans will fit within a 32-bit integer.</span></p>
+<p><span style="font-size: 14pt;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 14pt;"><strong>Input: </strong>txt = "abba", pat = "aba"
+<strong>Output:</strong> 2
+<strong>Explanation</strong>: There are 2 sub-sequences: [<span style="text-decoration: underline;">ab</span>b<span style="text-decoration: underline;">a</span>], [<span style="text-decoration: underline;">a</span>b<span style="text-decoration: underline;">ba</span>].</span></pre>
+<pre><span style="font-size: 14pt;"><strong>Input</strong>: txt = "banana", pat = "ban"
+<strong>Output:</strong> 3
+<strong>Explanation</strong>: There are 3 sub-sequences: [<span style="text-decoration: underline;">ban</span>ana], [<span style="text-decoration: underline;">ba</span>na<span style="text-decoration: underline;">n</span>a], [<span style="text-decoration: underline;">b</span>an<span style="text-decoration: underline;">an</span>a].
+</span></pre>
+<p><span style="font-size: 14pt;"><strong>Constraints:</strong><br>1 ≤ txt.size() ≤ pat.size() ≤ 10<sup>3</sup><br>Both <code>txt</code> and <code>pat</code> contain only lowercase alphabets.</span></p></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Amazon</code>&nbsp;<code>Google</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Dynamic Programming</code>&nbsp;<code>Algorithms</code>&nbsp;
