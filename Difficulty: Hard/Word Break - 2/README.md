@@ -1,0 +1,9 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/word-break-part-23249/1?page=2&category=Dynamic%20Programming&difficulty=Hard&sortBy=submissions">Word Break - 2</a></h2><h3>Difficulty Level : Difficulty: Hard</h3><hr><div class="problems_problem_content__Xm_eO" style="--text-color: var(--problem-text-color);"><p><span style="font-size: 14pt;">Given a string <strong><code data-start="116" data-end="119">s</code></strong> and a dictionary <strong><code data-start="137" data-end="145">dict[] </code></strong>of valid words, you need to return <strong>all possible ways</strong> to break the string&nbsp;<strong>s </strong>into <strong>sentence </strong>such that each word in the sentence is a valid dictionary word. <br>You are allowed to use a valid word multiple times in the sentence.</span></p>
+<p><span style="font-size: 14pt;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 14pt;"><strong>Input:</strong> s = "likegfg", dict[] = ["lik", "like", "egfg", "gfg"]
+<strong>Output:</strong> <br>"lik egfg"<br>"like gfg"
+<strong>Explanation:</strong> All the words in the given sentences are present in the dictionary.</span></pre>
+<pre><span style="font-size: 14pt;"><strong>Input:</strong> s = "geeksforgeeks", dict[] = ["for", "geeks"]
+<strong>Output:</strong> "geeks for geeks"
+<strong>Explanation:</strong> The string "geeksforgeeks" can be broken into valid words from the dictionary in one way.</span></pre>
+<p><span style="font-size: 14pt;"><strong>Constraints:</strong><br>1 ≤ dict.size() ≤ 20<br>1 ≤ dict[i] ≤ 15<br>1 ≤ s.size() ≤ 500</span></p></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Google</code>&nbsp;<code>IBM</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Dynamic Programming</code>&nbsp;<code>Recursion</code>&nbsp;<code>Backtracking</code>&nbsp;<code>Algorithms</code>&nbsp;
