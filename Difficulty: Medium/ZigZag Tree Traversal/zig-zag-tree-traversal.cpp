@@ -1,4 +1,5 @@
 /*
+Definition for Node
 class Node {
     int data;
     Node *left;
@@ -12,42 +13,39 @@ class Node {
 */
 class Solution {
   public:
-
-    vector<int> zigZagTraversal(Node* root)
-    {
+    vector<int> zigZagTraversal(Node* root) {
         vector<int> result;
-        if(!root) return result;
+        if (!root) return result;
 
         queue<Node*> q;
         q.push(root);
         
-    
-        bool leftToRight = true;
+   
+        bool leftToRight=true;
 
-        while(!q.empty()){
+        while (!q.empty()){
             int size=q.size();
-            vector<int> row(size);
+            vector<int> level(size);
 
             for(int i=0;i<size;i++){
-                Node* node = q.front();
+                Node* curr=q.front();
                 q.pop();
 
-       
+        
                 int index=leftToRight ? i : (size - 1 - i);
-                row[index]=node->data;
+                level[index]=curr->data;
 
-                if(node->left) q.push(node->left);
-                if(node->right) q.push(node->right);
+                if(curr->left) q.push(curr->left);
+                if(curr->right) q.push(curr->right);
             }
 
-         
-            leftToRight = !leftToRight;
-            
-      
-            for (int val : row) {
+   
+            leftToRight=!leftToRight;
+
+
+            for (int val : level){
                 result.push_back(val);
             }
-            
             
             
             
